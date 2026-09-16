@@ -67,21 +67,29 @@
 
   <!-- EQUIPPED SKILL TREE CARD -->
   <g transform="translate(0 490)">
-    <rect class="bg" width="800" height="170" rx="14"/>
+    <rect class="card-bg" width="800" height="230" rx="14"/>
     <rect class="accent" x="56" y="52" width="40" height="3" rx="1.5"/>
     <text class="section-head" x="56" y="40">EQUIPPED SKILL TREE</text>
     <text class="body-text" x="56" y="75" font-size="12">Items unlocked through continuous testing and deployment.</text>
 
-    <g class="chip-float" transform="translate(56 100)">
+    <!-- Skill Chips Grid -->
+    <g transform="translate(56 100)">
       <!-- Row 1 -->
-      <g><rect class="chip-bg" width="90" height="26" rx="13"/><text class="chip-text" x="45" y="13">PYTHON 3</text></g>
-      <g transform="translate(100 0)"><rect class="chip-bg" width="110" height="26" rx="13"/><text class="chip-text" x="55" y="13">TENSORFLOW</text></g>
-      <g transform="translate(220 0)"><rect class="chip-bg" width="75" height="26" rx="13"/><text class="chip-text" x="37.5" y="13">KERAS</text></g>
-      <g transform="translate(305 0)"><rect class="chip-bg" width="75" height="26" rx="13"/><text class="chip-text" x="37.5" y="13">REACT</text></g>
-      <g transform="translate(390 0)"><rect class="chip-bg" width="95" height="26" rx="13"/><text class="chip-text" x="47.5" y="13">TAILWIND</text></g>
-      <g transform="translate(495 0)"><rect class="chip-bg" width="90" height="26" rx="13"/><text class="chip-text" x="45" y="13">POSTGRES</text></g>
-      <g transform="translate(595 0)"><rect class="chip-bg" width="65" height="26" rx="13"/><text class="chip-text" x="32.5" y="13">GSAP</text></g>
-      <g transform="translate(670 0)"><rect class="chip-bg" width="115" height="26" rx="13"/><text class="chip-text" x="57.5" y="13">RAG PIPELINES</text></g>
+      <g transform="translate(0 0)"><rect class="chip-bg" width="75" height="30" rx="6"/><text class="chip-text" x="37.5" y="15">PYTHON</text></g>
+      <g transform="translate(85 0)"><rect class="chip-bg" width="80" height="30" rx="6"/><text class="chip-text" x="40" y="15">FASTAPI</text></g>
+      <g transform="translate(175 0)"><rect class="chip-bg" width="65" height="30" rx="6"/><text class="chip-text" x="32.5" y="15">FLASK</text></g>
+      <g transform="translate(250 0)"><rect class="chip-bg" width="115" height="30" rx="6"/><text class="chip-text" x="57.5" y="15">TENSORFLOW</text></g>
+      <g transform="translate(375 0)"><rect class="chip-bg" width="80" height="30" rx="6"/><text class="chip-text" x="40" y="15">DOCKER</text></g>
+      <g transform="translate(465 0)"><rect class="chip-bg" width="65" height="30" rx="6"/><text class="chip-text" x="32.5" y="15">FAISS</text></g>
+      <g transform="translate(540 0)"><rect class="chip-bg" width="65" height="30" rx="6"/><text class="chip-text" x="32.5" y="15">YOLO</text></g>
+      <g transform="translate(615 0)"><rect class="chip-bg" width="55" height="30" rx="6"/><text class="chip-text" x="27.5" y="15">SQL</text></g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0 42)"><rect class="chip-bg" width="95" height="30" rx="6"/><text class="chip-text" x="47.5" y="15">REST APIS</text></g>
+      <g transform="translate(105 42)"><rect class="chip-bg" width="130" height="30" rx="6"/><text class="chip-text" x="65" y="15">RAG PIPELINES</text></g>
+      <g transform="translate(245 42)"><rect class="chip-bg" width="130" height="30" rx="6"/><text class="chip-text" x="65" y="15">TRANSFORMERS</text></g>
+      <g transform="translate(385 42)"><rect class="chip-bg" width="105" height="30" rx="6"/><text class="chip-text" x="52.5" y="15">WIRESHARK</text></g>
+      <g transform="translate(500 42)"><rect class="chip-bg" width="80" height="30" rx="6"/><text class="chip-text" x="40" y="15">OPENCV</text></g>
     </g>
   </g>
 
