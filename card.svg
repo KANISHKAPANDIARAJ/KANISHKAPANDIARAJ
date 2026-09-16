@@ -1,30 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="920" viewBox="0 0 800 920">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1120" viewBox="0 0 800 1120">
   <style>
     .bg { fill: #0d0d10; }
-    .title-text { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 40px; }
+    .card-bg { fill: #13131a; stroke: #1f1f2e; stroke-width: 1.5; }
+    .title-text { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 38px; }
     .sub-text { fill: #a5a5b3; font-family: monospace; font-size: 12px; letter-spacing: 2px; }
     .accent { fill: #00F5D4; }
-    .section-head { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 20px; }
-    .body-text { fill: #a5a5b3; font-family: system-ui, -apple-system, sans-serif; font-size: 14px; }
+    .section-head { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 18px; }
+    .body-text { fill: #a5a5b3; font-family: system-ui, -apple-system, sans-serif; font-size: 13px; }
     .highlight { fill: #00F5D4; font-family: monospace; font-size: 13px; font-weight: 700; }
     .pill-bg { fill: #00F5D4; fill-opacity: 0.12; stroke: #00F5D4; stroke-opacity: 0.5; }
-    .pill-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: middle; }
+    .pill-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: central; }
     .chip-bg { fill: #16161c; stroke: #2a2a35; stroke-width: 1; }
-    .chip-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: middle; }
+    .chip-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: central; }
 
     /* Animations */
     .pulse-corner { animation: cornerPulse 3s ease-in-out infinite alternate; }
     .glow-line { animation: lineExpand 4s ease-out infinite; transform-origin: center; }
-    .chip-float { animation: float 4s ease-in-out infinite alternate; }
     
     @keyframes cornerPulse { 0% { opacity: 0.4; } 100% { opacity: 1; } }
     @keyframes lineExpand { 0%, 100% { transform: scaleX(0.95); opacity: 0.7; } 50% { transform: scaleX(1); opacity: 1; } }
-    @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-4px); } }
   </style>
+
+  <!-- BACKGROUND CANVAS -->
+  <rect width="800" height="1120" class="bg" rx="16"/>
 
   <!-- HEADER CARD -->
   <g transform="translate(0 0)">
-    <rect class="bg" width="800" height="200" rx="14"/>
+    <rect class="card-bg" width="800" height="200" rx="14"/>
     <g class="pulse-corner">
       <rect x="25" y="25" width="20" height="2" class="accent"/>
       <rect x="25" y="25" width="2" height="20" class="accent"/>
@@ -38,36 +40,36 @@
 
   <!-- PLAYER CHARACTER LOG CARD -->
   <g transform="translate(0 220)">
-    <rect class="bg" width="800" height="250" rx="14"/>
+    <rect class="card-bg" width="800" height="250" rx="14"/>
     <rect class="accent" x="32" y="30" width="3" height="190" rx="1.5"/>
     <text class="section-head" x="56" y="60">PLAYER CHARACTER LOG</text>
     
     <text class="body-text" x="56" y="95">
-      <tspan x="56" dy="0">CLASS: AI Engineer &amp; Systems Architect</tspan>
-      <tspan x="56" dy="24">HP: 100/100 | MP: 85/100 | FUEL: Cold Water &amp; Code Logic</tspan>
-      <tspan x="56" dy="24">PASSIVE: Training neural networks while tracking loss curves like boss health bars.</tspan>
-      <tspan x="56" dy="24">SPECIAL MOVE: Writing SQL queries long enough to trigger final boss encounters.</tspan>
+      <tspan x="56" dy="0">CLASS: B.Tech AI &amp; Data Science | KGiSL Institute of Technology</tspan>
+      <tspan x="56" dy="24">HP: 100/100 | MP: 90/100 | FUEL: Cold Water &amp; System Logic</tspan>
+      <tspan x="56" dy="24">PASSIVE: Building Python backends, FastAPI microservices, and RAG pipelines.</tspan>
+      <tspan x="56" dy="24">SPECIAL MOVE: Deploying Docker containers and debugging complex SQL queries.</tspan>
     </text>
 
     <g transform="translate(56 185)">
       <g>
-        <rect class="pill-bg" width="130" height="24" rx="12"/>
-        <text class="pill-text" x="65" y="12">LEVEL 99 PYTHON</text>
+        <rect class="pill-bg" width="140" height="28" rx="14"/>
+        <text class="pill-text" x="70" y="14">AI &amp; DS UNDERGRAD</text>
       </g>
-      <g transform="translate(142 0)">
-        <rect class="pill-bg" width="130" height="24" rx="12"/>
-        <text class="pill-text" x="65" y="12">RAG ARCHITECT</text>
+      <g transform="translate(152 0)">
+        <rect class="pill-bg" width="130" height="28" rx="14"/>
+        <text class="pill-text" x="65" y="14">BACKEND &amp; APIS</text>
       </g>
-      <g transform="translate(284 0)">
-        <rect class="pill-bg" width="140" height="24" rx="12"/>
-        <text class="pill-text" x="70" y="12">ZERO CAFFEINE RUN</text>
+      <g transform="translate(294 0)">
+        <rect class="pill-bg" width="140" height="28" rx="14"/>
+        <text class="pill-text" x="70" y="14">ZERO CAFFEINE RUN</text>
       </g>
     </g>
   </g>
 
   <!-- EQUIPPED SKILL TREE CARD -->
   <g transform="translate(0 490)">
-    <rect class="card-bg" width="800" height="230" rx="14"/>
+    <rect class="card-bg" width="800" height="210" rx="14"/>
     <rect class="accent" x="56" y="52" width="40" height="3" rx="1.5"/>
     <text class="section-head" x="56" y="40">EQUIPPED SKILL TREE</text>
     <text class="body-text" x="56" y="75" font-size="12">Items unlocked through continuous testing and deployment.</text>
@@ -94,18 +96,24 @@
   </g>
 
   <!-- ACTIVE QUESTS CARD -->
-  <g transform="translate(0 680)">
-    <rect class="bg" width="800" height="230" rx="14"/>
+  <g transform="translate(0 720)">
+    <rect class="card-bg" width="800" height="380" rx="14"/>
     <rect class="accent" x="56" y="47" width="40" height="3" rx="1.5"/>
     <text class="section-head" x="56" y="35">CURRENT ACTIVE QUESTS</text>
 
-    <text class="highlight" x="56" y="80">[QUEST 1] Multimodal RAG Platform</text>
-    <text class="body-text" x="56" y="98" font-size="13">Objective: Connect React UI with dynamic PDF parsing. Reward: Zero retrieval latency.</text>
+    <text class="highlight" x="56" y="80">[SIDE QUEST] Ether Service | Data Analytics Intern (Jun 2025 – Jul 2025)</text>
+    <text class="body-text" x="56" y="98">Objective: Build content-based recommendation system &amp; perform feature engineering in Pandas.</text>
 
-    <text class="highlight" x="56" y="130">[QUEST 2] Neural Digit Classifier</text>
-    <text class="body-text" x="56" y="148" font-size="13">Objective: Train CNN on MNIST dataset across 5 epochs. Reward: High accuracy rating.</text>
+    <text class="highlight" x="56" y="135">[QUEST 1] Multimodal RAG Document Intelligence System</text>
+    <text class="body-text" x="56" y="153">Objective: Expose FastAPI REST endpoints, integrate FAISS semantic search &amp; Dockerize.</text>
 
-    <text class="highlight" x="56" y="180">[QUEST 3] PEFT Bug Summarizer</text>
-    <text class="body-text" x="56" y="198" font-size="13">Objective: Optimize LoRA adapters for issue triage. Reward: Maximum GPU VRAM efficiency.</text>
+    <text class="highlight" x="56" y="190">[QUEST 2] Network Intrusion Detection System</text>
+    <text class="body-text" x="56" y="208">Objective: Build hybrid CNN-LSTM model on NSL-KDD &amp; Wireshark traffic for threat visualization.</text>
+
+    <text class="highlight" x="56" y="245">[QUEST 3] Multilingual News Summarizer</text>
+    <text class="body-text" x="56" y="263">Objective: Deploy Flask app with BART transformers, sentiment analysis, and gTTS text-to-speech.</text>
+
+    <text class="highlight" x="56" y="300">[QUEST 4] AI Engineering Drawing Comparison System</text>
+    <text class="body-text" x="56" y="318">Objective: Combine OpenCV difference detection, OCR, and Gemini API for visual drawing diffs.</text>
   </g>
 </svg>
