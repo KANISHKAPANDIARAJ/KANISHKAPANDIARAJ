@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="920" viewBox="0 0 800 920">
+  <style>
+    .bg { fill: #0d0d10; }
+    .title-text { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 40px; }
+    .sub-text { fill: #a5a5b3; font-family: monospace; font-size: 12px; letter-spacing: 2px; }
+    .accent { fill: #00F5D4; }
+    .section-head { fill: #f7f7fb; font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 20px; }
+    .body-text { fill: #a5a5b3; font-family: system-ui, -apple-system, sans-serif; font-size: 14px; }
+    .highlight { fill: #00F5D4; font-family: monospace; font-size: 13px; font-weight: 700; }
+    .pill-bg { fill: #00F5D4; fill-opacity: 0.12; stroke: #00F5D4; stroke-opacity: 0.5; }
+    .pill-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: middle; }
+    .chip-bg { fill: #16161c; stroke: #2a2a35; stroke-width: 1; }
+    .chip-text { fill: #f7f7fb; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: middle; }
+
+    /* Animations */
+    .pulse-corner { animation: cornerPulse 3s ease-in-out infinite alternate; }
+    .glow-line { animation: lineExpand 4s ease-out infinite; transform-origin: center; }
+    .chip-float { animation: float 4s ease-in-out infinite alternate; }
+    
+    @keyframes cornerPulse { 0% { opacity: 0.4; } 100% { opacity: 1; } }
+    @keyframes lineExpand { 0%, 100% { transform: scaleX(0.95); opacity: 0.7; } 50% { transform: scaleX(1); opacity: 1; } }
+    @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-4px); } }
+  </style>
+
+  <!-- HEADER CARD -->
+  <g transform="translate(0 0)">
+    <rect class="bg" width="800" height="200" rx="14"/>
+    <g class="pulse-corner">
+      <rect x="25" y="25" width="20" height="2" class="accent"/>
+      <rect x="25" y="25" width="2" height="20" class="accent"/>
+      <rect x="755" y="25" width="20" height="2" class="accent"/>
+      <rect x="773" y="25" width="2" height="20" class="accent"/>
+    </g>
+    <text class="title-text" x="400" y="95" text-anchor="middle">KANISHKA PANDIARAJ</text>
+    <rect class="accent glow-line" x="200" y="115" width="400" height="2" rx="1"/>
+    <text class="sub-text" x="400" y="150" text-anchor="middle">PRESS START TO INITIATE DEVELOPER SESSION</text>
+  </g>
+
+  <!-- PLAYER CHARACTER LOG CARD -->
+  <g transform="translate(0 220)">
+    <rect class="bg" width="800" height="250" rx="14"/>
+    <rect class="accent" x="32" y="30" width="3" height="190" rx="1.5"/>
+    <text class="section-head" x="56" y="60">PLAYER CHARACTER LOG</text>
+    
+    <text class="body-text" x="56" y="95">
+      <tspan x="56" dy="0">CLASS: AI Engineer &amp; Systems Architect</tspan>
+      <tspan x="56" dy="24">HP: 100/100 | MP: 85/100 | FUEL: Cold Water &amp; Code Logic</tspan>
+      <tspan x="56" dy="24">PASSIVE: Training neural networks while tracking loss curves like boss health bars.</tspan>
+      <tspan x="56" dy="24">SPECIAL MOVE: Writing SQL queries long enough to trigger final boss encounters.</tspan>
+    </text>
+
+    <g transform="translate(56 185)">
+      <g>
+        <rect class="pill-bg" width="130" height="24" rx="12"/>
+        <text class="pill-text" x="65" y="12">LEVEL 99 PYTHON</text>
+      </g>
+      <g transform="translate(142 0)">
+        <rect class="pill-bg" width="130" height="24" rx="12"/>
+        <text class="pill-text" x="65" y="12">RAG ARCHITECT</text>
+      </g>
+      <g transform="translate(284 0)">
+        <rect class="pill-bg" width="140" height="24" rx="12"/>
+        <text class="pill-text" x="70" y="12">ZERO CAFFEINE RUN</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- EQUIPPED SKILL TREE CARD -->
+  <g transform="translate(0 490)">
+    <rect class="bg" width="800" height="170" rx="14"/>
+    <rect class="accent" x="56" y="52" width="40" height="3" rx="1.5"/>
+    <text class="section-head" x="56" y="40">EQUIPPED SKILL TREE</text>
+    <text class="body-text" x="56" y="75" font-size="12">Items unlocked through continuous testing and deployment.</text>
+
+    <g class="chip-float" transform="translate(56 100)">
+      <!-- Row 1 -->
+      <g><rect class="chip-bg" width="90" height="26" rx="13"/><text class="chip-text" x="45" y="13">PYTHON 3</text></g>
+      <g transform="translate(100 0)"><rect class="chip-bg" width="110" height="26" rx="13"/><text class="chip-text" x="55" y="13">TENSORFLOW</text></g>
+      <g transform="translate(220 0)"><rect class="chip-bg" width="75" height="26" rx="13"/><text class="chip-text" x="37.5" y="13">KERAS</text></g>
+      <g transform="translate(305 0)"><rect class="chip-bg" width="75" height="26" rx="13"/><text class="chip-text" x="37.5" y="13">REACT</text></g>
+      <g transform="translate(390 0)"><rect class="chip-bg" width="95" height="26" rx="13"/><text class="chip-text" x="47.5" y="13">TAILWIND</text></g>
+      <g transform="translate(495 0)"><rect class="chip-bg" width="90" height="26" rx="13"/><text class="chip-text" x="45" y="13">POSTGRES</text></g>
+      <g transform="translate(595 0)"><rect class="chip-bg" width="65" height="26" rx="13"/><text class="chip-text" x="32.5" y="13">GSAP</text></g>
+      <g transform="translate(670 0)"><rect class="chip-bg" width="115" height="26" rx="13"/><text class="chip-text" x="57.5" y="13">RAG PIPELINES</text></g>
+    </g>
+  </g>
+
+  <!-- ACTIVE QUESTS CARD -->
+  <g transform="translate(0 680)">
+    <rect class="bg" width="800" height="230" rx="14"/>
+    <rect class="accent" x="56" y="47" width="40" height="3" rx="1.5"/>
+    <text class="section-head" x="56" y="35">CURRENT ACTIVE QUESTS</text>
+
+    <text class="highlight" x="56" y="80">[QUEST 1] Multimodal RAG Platform</text>
+    <text class="body-text" x="56" y="98" font-size="13">Objective: Connect React UI with dynamic PDF parsing. Reward: Zero retrieval latency.</text>
+
+    <text class="highlight" x="56" y="130">[QUEST 2] Neural Digit Classifier</text>
+    <text class="body-text" x="56" y="148" font-size="13">Objective: Train CNN on MNIST dataset across 5 epochs. Reward: High accuracy rating.</text>
+
+    <text class="highlight" x="56" y="180">[QUEST 3] PEFT Bug Summarizer</text>
+    <text class="body-text" x="56" y="198" font-size="13">Objective: Optimize LoRA adapters for issue triage. Reward: Maximum GPU VRAM efficiency.</text>
+  </g>
+</svg>
