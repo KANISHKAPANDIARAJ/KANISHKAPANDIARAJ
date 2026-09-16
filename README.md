@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./card.svg" alt="Kanishka Pandiaraj Profile Card" width="100%" />
+  <img src="./card.svg?v=2" alt="Kanishka Pandiaraj Profile Card" width="100%" />
 </p>
 
 <p align="center">
